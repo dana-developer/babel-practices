@@ -13,7 +13,8 @@ const users = [
 ];
 
 // 객체분해(es6)
-function print({ no, name, email }) {
+function print(_ref) {
+	let { no, name, email } = _ref;
 	// 템플릿 문자열(es6)
 	console.log(`${no}:${name}:${email}`);
 }

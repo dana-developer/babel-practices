@@ -1,5 +1,5 @@
 // 블록 스코프(es6)
-const users = [
+var users = [
 	{
 		no: 1,
 		name: "마이콜",
@@ -19,6 +19,6 @@ function print({ no, name, email }) {
 }
 
 // for ~ of(es6)
-for (let user of users) {
+for (var user of users) {
 	print(user);
 }
